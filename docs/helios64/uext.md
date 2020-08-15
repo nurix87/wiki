@@ -33,6 +33,7 @@ Below is the full pinout of the UEXT header:
 Refer to the respective pages directly:
 
 - [SPI](/helios64/hardware/)
+<<<<<<< HEAD
 - [I2C](/helios64/I2C/)
 
 ## RS232 (UART)
@@ -41,3 +42,13 @@ The UART bus exposed on the UEXT header is the same than the RK3399 SoC serial c
 
 !!! Important
     If you connect some modules which might require dedicated serial UART line to the SoC, this module will not operate properly.
+=======
+- [I2C](/helios64/i2c/)
+
+## RS232 (UART)
+
+The UART exposed on the UEXT header is UART Controller 0 from the RK3399 SoC. The primary purpose of this UART is to provide serial communication between SoC and Device connected to the UEXT port.
+
+!!! Note
+    If you are looking for SoC serial console you should refer to [USB-C Console Mode](/helios64/usb/#serial-console).
+>>>>>>> 7b10e9c9ea26cf4306a6515323a5af6affe76a39

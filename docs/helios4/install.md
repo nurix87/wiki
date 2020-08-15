@@ -1,5 +1,5 @@
 !!! note
-    Go to [Kit Assembly](/helios4/kit) to find out how to put together your Helios4 NAS
+    Go to [Kit Assembly](/helios4/kit/) to find out how to put together your Helios4 NAS
 
 ## **What you need before you start.**
 
@@ -26,10 +26,7 @@ You might refer to the [SD Card](/helios4/sdcard/#tested-microsd-card) page to f
 
 You will need first to download a image build to write on the microSD Card.
 
-Go to [Dowload](/helios4/download) and chose one of the latest build.
-
-!!! note
-    Images with .7z extension must be first uncompressed with 7-Zip on Windows, Keka on OS X and 7z on Linux (apt-get install p7zip-full).
+Go to [Dowload](/download) and chose one of the latest build.
 
 ##  **Step 2** - Writing an image to a microSD Card
 
@@ -50,15 +47,13 @@ Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windo
 ### Under Linux (via Terminal)
 
 ```bash
-7z e Armbian_5.90_Helios4_Debian_buster_next_4.19.59.7z
-
-sudo dd bs=4M if=Armbian_5.90_Helios4_Debian_buster_next_4.19.59.img of=/dev/sdX conv=fsync
+zcat Armbian_20.05.2_Helios4_buster_current_5.4.43.img.gz | pv | dd of=/dev/mmcblkX bs=1M
 ```
 
 *Replace the filename by the image file name you downloaded.*
 
 !!! note
-    /dev/sdX is where the microSD is mapped in your Linux machine, change the 'X' to your corresponding mapped device. If you set /dev/sdX to a wrong device then you might risk erasing a hard drive or different device than the designated microSD.
+    /dev/mmcblkX is where the microSD is mapped in your Linux machine, change the 'X' to your corresponding mapped device. If you set /dev/mmcblkX to a wrong device then you might risk erasing a different device than the designated microSD.
 
 ##  **Step 3** - Power-up Helios4
 
@@ -199,7 +194,14 @@ You can now connect by SSH to your Helios4 to carry on with your configuration.
 
 ## **What to do next ?**
 
-If you want to install OpenMediaVault, the next-gen network attached storage (NAS) software, refer to the [OMV](/helios4/omv) page.
+After a fresh install, it's always good to update the system with the latest packages.
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+If you want to install OpenMediaVault, the next-gen network attached storage (NAS) software, refer to the [OMV](/helios4/omv/) page.
 
 If you have assembled an OLED Display as part of your Helios4 setup, it can be the right time to set it up. Refer to the following [section](/helios4/i2c/#sys-oled-application) that will explain you how to install the **sys-oled** application which control the OLED display.
 

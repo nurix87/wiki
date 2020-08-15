@@ -32,13 +32,18 @@ This jumper controls a 2:1 MUX switching the USB2.0 lanes of the Type-C port (J1
 * When the jumper is opened the Type-C port (J15) can be used to connect to the serial console of the Helios64.
 * When closed and system in recovery mode, the Type-C port (J15) can be used to flash directly the eMMC over USB.
 
+<<<<<<< HEAD
 ## DC-IN Priority (P14 & P15)
+=======
+## DC-IN Priority (P15)
+>>>>>>> 7b10e9c9ea26cf4306a6515323a5af6affe76a39
 
 Helios64 supports 2x different DC-IN 12V inputs :
 
 * AC Adapter (J16)
 * ATX PSU (J10)
 
+<<<<<<< HEAD
 You can plug both DC-IN inputs in order to have a failover setup that automatically switch to the other input if the first one fails. Jumpers P14 and P15 can be used to configure input priority.
 
 ![P14 P15 location](/helios64/img/jumper/p14-15-jumper.jpg)
@@ -50,6 +55,16 @@ You can plug both DC-IN inputs in order to have a failover setup that automatica
 | Close | Open  | Set AC Adapter Priority |
 | Close | Close | Self Locking Priority |
 
+=======
+You can plug both DC-IN inputs in order to have a failover setup that automatically switches to the other input if the first one fails. Jumpers P15 can be used to force ATX as master DC-IN input.
+
+![P15 location](/helios64/img/jumper/p15-jumper.jpg)
+
+| P15 | Description |
+|-----|-------------|
+| Open  | O-Ring Connection |
+| Close | Set ATX Priority |
+>>>>>>> 7b10e9c9ea26cf4306a6515323a5af6affe76a39
 
 ## SATA Controller Flash (P8)
 

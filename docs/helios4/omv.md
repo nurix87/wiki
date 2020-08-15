@@ -1,16 +1,15 @@
-This is a basic guide to help you setting up Helios4 NAS with [OpenMediaVault](https://www.openmediavault.org/) (**OMV**). OMV offers a large collection of features that we don't cover here. We invite you to look online for the existing OMV guides or go on the [OMV forum](https://forum.openmediavault.org/index.php/Board/29-Guides/).
-
-!!! info
-    The following guide was written for OMV3 (Erasmus), but it still works with OMV4 (Arrakis) since the interface is the same.
-
-!!! important
-    As of July 2019, OMV5 (Usul) is still in Beta and Unstable, therefore we strongly recommend using OMV4 (Arrakis) for now. In order to install OMV4, you need to be running Debian 9 Stretch.
+This is a basic guide to help you setting up Helios4 NAS with [OpenMediaVault](https://www.openmediavault.org/) (**OMV**). OMV offers a large collection of features that we don't cover here. We invite you to look online for the existing OMV guides or go on the [OMV forum](https://forum.openmediavault.org/index.php?board/29-guides/).
 
 ## What is OpenMediaVault?
 
 OpenMediaVault (OMV) is a next-gen network attached storage (NAS) software based on Debian Linux. It contains services like SSH, (S)FTP, SMB/CIFS, DAAP media server, RSync, BitTorrent client and many more... all configurable via a Web Control Panel. Thanks to a modular framework design, new features can be added to OMV via plugins. It is a simple and easy to use out-of-the-box solution that will allow everyone to install and administrate a Network Attached Storage without deeper knowledge.
 
 ## Install Openmediavault
+
+!!! important
+    You should first update your system to ensure you are using the latest **armbian-config** tool.
+    
+    `sudo apt-get update && sudo apt-get upgrade`
 
 You can easily install OMV with the **armbian-config** tool.
 

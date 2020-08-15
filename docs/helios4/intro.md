@@ -2,13 +2,15 @@ disqus:
 
 # Helios4 Introduction.
 
-Helios4 is a powerful ARM based board specially designed for Network Attached Storage. It harnesses its processing capabilities from the **ARMADA 38x-MicroSoM** from [SolidRun](https://wiki.solid-run.com/doku.php?id=products:a38x:microsom).
+Helios4 is a powerful ARM based board specially designed for Network Attached Storage. It harnesses its processing capabilities from the **Marvell ARMADA® 388** System-on-Module from [SolidRun](https://developer.solid-run.com/knowledge-base/a388-som-integration-guide).
 
 ![Helios64](/helios4/img/intro/helios4.jpg)
 
 The **Marvell ARMADA® 388** is a robust and energy-efficient System on Chip (SoC) with a collection of high speed interfaces especially suited for headless data processing, networking and storage. This Dual-core ARM Cortex A9 CPU clocked at 1.6 Ghz, paired with 2GB of ECC memory, integrates a Cryptographic and XOR DMA engines to provide the best level of performance and reliability for NAS functionalities.
 
 ## Overall Specifications
+
+### Board
 
 |**Board Specifications**||
 |------------|-----------|
@@ -21,7 +23,7 @@ The **Marvell ARMADA® 388** is a robust and energy-efficient System on Chip (So
 |System Memory|2GB DDR3L ECC|
 |**HDD/SSD Interfaces**||
 |SATA 3.0 Ports|4|
-|Max Raw Capacity|48 TB (12 TB drive x 4)|
+|Max Raw Capacity|64 TB (16 TB drive x 4)|
 |Max Single Volume Size|16 TB|
 |**External Interfaces**||
 |GbE LAN Port|1|
@@ -38,6 +40,8 @@ The **Marvell ARMADA® 388** is a robust and energy-efficient System on Chip (So
 |RTC Battery|1|
 |DC input|12V / 8A|
 
+### Mechanical
+
 |**Mechanical Specifications**||
 |------------|-----------|
 |Board Dimension|100mm x 100mm|
@@ -45,6 +49,8 @@ The **Marvell ARMADA® 388** is a robust and energy-efficient System on Chip (So
 |Case Dimention (H x W x D)|182 mm x 107 mm x 210 mm|
 |Case Weight (without HDD)|450gr|
 |Case Material|Colored Acrylic|
+
+### Software
 
 |**Software Specifications**||
 |------------|-----------|
@@ -57,15 +63,15 @@ The **Marvell ARMADA® 388** is a robust and energy-efficient System on Chip (So
 
 Once you have received your Helios4, this wiki will run you through all the necessary steps to setup your system.
 
-1. [Kit Assembly](/helios4/kit) - How to put together your Helios4.
+1. [Kit Assembly](/helios4/kit/) - How to put together your Helios4.
 
-2. [Download](/helios4/download) - Get the latest OS build to install.
+2. [Download](/download/) - Get the latest OS build to install.
 
-3. [Install](/helios4/install) - 1st startup and set-up instructions.
+3. [Install](/helios4/install/) - 1st startup and set-up instructions.
 
-4. [Software](/helios4/omv) - Collection of tutorials on different 3rd party applications.
+4. [Software](/helios4/omv/) - Collection of tutorials on different 3rd party applications.
 
-5. [Hardware](/helios4/hardware) - Understand Helios4 hardware and take advantage of all its features.
+5. [Hardware](/helios4/hardware/) - Understand Helios4 hardware and take advantage of all its features.
 
 ### Armbian Support Forum
 

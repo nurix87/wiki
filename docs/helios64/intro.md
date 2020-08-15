@@ -6,7 +6,7 @@ Helios64 is a powerful ARM board specially designed for Network Attached Storage
 
 ![Helios64](/helios64/img/intro/helios64.png)
 
-Helios64 is our latest design for the ultimate ARM powered NAS. Compared to the [Helios4](/helios4/intro), it offers improvement on every single key aspect :
+Helios64 is our latest design for the ultimate ARM powered NAS. Compared to the [Helios4](/helios4/intro/), it offers improvement on every single key aspect :
 
 * More storage capacity with 5x SATA ports,
 * Greater network throughput with Multi-Gigabit Ethernet (2.5 GbE),
@@ -14,19 +14,19 @@ Helios64 is our latest design for the ultimate ARM powered NAS. Compared to the 
 * More functionalities with Display Port and DAS modes support,
 * Reinforced reliability with Built-in UPS.
 
-# Overall Specifications
+## Overall Specifications
 
-## Board
+### Board
 
 |**Board Specifications**||
 |------------|-----------|
 |**SoC**||
-|SoC Model|Rockchip RK3399 - Hexacore<br>2x Cortex-A72 + 4x Cortes-A53 |
+|SoC Model|Rockchip RK3399 - Hexacore<br>2x Cortex-A72 + 4x Cortex-A53 |
 |SoC Architecture|ARMv8-A 64-bit|
 |CPU Frequency|A72 : 1.8 GHz<br> A53 : 1.4 GHz |
 |Additional Features|- GPU Mali-T860MP4<br>- Video Encode/Decoder Engines<br>- Security Acceleration Engines<br>- Secure Boot|
 |**Memory**||
-|LPDDR4 RAM|4GB|
+|LPDDR4 RAM|4GB<br>_*ECC option available 2021_|
 |eMMC 5.1 NAND Flash|16GB|
 |SPI NOR Flash|128Mb|
 |**HDD/SSD Interfaces**||
@@ -46,7 +46,7 @@ Helios64 is our latest design for the ultimate ARM powered NAS. Compared to the 
 |**Others**||
 |PWM FAN|2|
 |On-Board HDD Power|yes|
-|Bult-in UPS|yes|
+|Built-in UPS|yes|
 |RTC Battery|yes|
 |DC input|Dual 12V inputs|
 |Wake-on-LAN|yes|
@@ -54,19 +54,17 @@ Helios64 is our latest design for the ultimate ARM powered NAS. Compared to the 
 
 ![Helios64 Top View](/helios64/img/intro/helios64-top-view.jpg)
 
-
-## Mechanical
-
+### Mechanical
 
 |**Mechanical Specifications**||
 |------------|-----------|
 |Board Dimension|120mm x 120mm|
 |Board Weight|180gr (without heatsink)|
-|Case Dimension (H x W x D)|H 134mm x W 222mm x D 250mm|
+|Case Dimension (H x W x D)|H 144mm x W 222mm x D 250mm|
 |Case Weight|3.5Kg (without HDD)|
 |Case Material|Aluminum + Metal|
 
-## Software
+### Software
 
 |**Software Specifications**||
 |------------|-----------|
@@ -74,8 +72,5 @@ Helios64 is our latest design for the ultimate ARM powered NAS. Compared to the 
 |Kernel Version|5.4
 |U-Boot Version|2019.11
 |Software Partners|- Armbian: Debian and Ubuntu for ARM board<br>- OpenMediaVault: Linux NAS turn-key solution<br>- Syncloud: Cloud services at your premises<br>- Nextcloud: The File Hosting Solutions|
-
-
-**More info coming soon...**
 
 ![Helios64 Heatsink](/helios64/img/intro/helios64-heatsink.jpg)
